@@ -26,6 +26,10 @@ randomPass = [];
 
  var passLength = prompt("Please select a number between 8 and 128");
 
+ if (isNAN(passLength) || (passLength < 8) || (passLength >128)){
+   window.alert('Please enter a number between 8 and 128')
+   return generatePassword();
+ }
 
  var lowerCase = confirm("Lowercase");
  var upperCase = confirm("Uppercase");
@@ -52,13 +56,13 @@ if(symbols){
   promptResponse = promptResponse.concat(symbolList);
 }
 
-console.log(promptResponse)
+// console.log(promptResponse)
 
 for(var i=0; i< passLength; i++){
 randomPass.push(promptResponse[Math.floor(Math.random() * promptResponse.length)]);
 }
 
-console.log(randomPass)
+// console.log(randomPass)
 
 return randomPass.join("");
 
