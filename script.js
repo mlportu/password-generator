@@ -5,11 +5,17 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   console.log('click')
   var password = generatePassword();
+
   var passwordText = document.querySelector("#password");
 
 
   passwordText.value = password;
 
+}
+
+function generatePassword(){
+ var samplePrompt = prompt("This is a sample prompt to get information");
+ console.log(samplePrompt)
 }
 
 // Add event listener to generate button
