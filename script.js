@@ -20,7 +20,8 @@ var symbolList = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "+", "-"];
 
 function generatePassword(){
 
-var promptResponse = []
+var promptResponse = [];
+randomPass = [];
 
  var passLength = prompt("Please select a number between 8 and 128");
  console.log(passLength);
@@ -61,7 +62,7 @@ if(symbols){
 console.log(promptResponse)
 
 for(var i=0; i< passLength; i++){
-randomPass =  promptResponse[Math.floor(Math.random() * promptResponse.length)]
+randomPass.push(promptResponse[Math.floor(Math.random() * promptResponse.length)]);
 }
 
 console.log(randomPass)
