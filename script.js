@@ -61,7 +61,7 @@ if(symbols){
 console.log(promptResponse)
 
 for(var i=0; i< passLength; i++){
-randomPass =  Math.floor(Math.random() * promptResponse.length)
+randomPass =  promptResponse[Math.floor(Math.random() * promptResponse.length)]
 }
 
 console.log(randomPass)
