@@ -59,6 +59,13 @@ if(symbols){
 }
 
 console.log(promptResponse)
+
+for(var i=0; i< 10; i++){
+randomPass =  Math.floor(Math.random() * promptResponse.length)
+}
+
+console.log(randomPass)
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
