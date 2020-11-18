@@ -25,38 +25,30 @@ var promptResponse = [];
 randomPass = [];
 
  var passLength = prompt("Please select a number between 8 and 128");
- console.log(passLength);
+
 
  var lowerCase = confirm("Lowercase");
- console.log(lowerCase);
-
  var upperCase = confirm("Uppercase");
- console.log(upperCase);
-
  var numbers = confirm("numbers");
- console.log(numbers);
-
  var symbols = confirm("symbols");
- console.log(symbols);
-
 
 if(lowerCase){
-  console.log(lowerCaseLetters)
+  // console.log(lowerCaseLetters)
   promptResponse = promptResponse.concat(lowerCaseLetters);
 }
 
 if(upperCase){
-  console.log(upperCaseLetters)
+  // console.log(upperCaseLetters)
   promptResponse = promptResponse.concat(upperCaseLetters);
 }
 
 if(numbers){
-  console.log(numbersList)
+  // console.log(numbersList)
   promptResponse = promptResponse.concat(numbersList);
 }
 
 if(symbols){
-  console.log(symbolList)
+  // console.log(symbolList)
   promptResponse = promptResponse.concat(symbolList);
 }
 
