@@ -13,10 +13,10 @@ function writePassword() {
 
 }
 
-var lowerCaseLetters = ["abcdefghijklmnopqrstuvwxyz"];
-var upperCaseLetters = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-var numbersList = ["1234567890"];
-var symbolList = ["!@#$%^&*()_+=-"];
+var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var upperCaseLetters = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+var numbersList = ["1", "2", "3", "4", "5", "6", "7", "8", "9","0"];
+var symbolList = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "+", "-"];
 
 function generatePassword(){
 
