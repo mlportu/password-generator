@@ -19,6 +19,9 @@ var numbersList = ["1234567890"];
 var symbolList = ["!@#$%^&*()_+=-"];
 
 function generatePassword(){
+
+var promptResponse = []
+
  var samplePrompt = prompt("This is a sample prompt to get information");
  console.log(samplePrompt);
 
@@ -37,20 +40,25 @@ function generatePassword(){
 
 if(lowerCase){
   console.log(lowerCaseLetters)
+  promptResponse = promptResponse.concat(lowerCaseLetters);
 }
 
 if(upperCase){
   console.log(upperCaseLetters)
+  promptResponse = promptResponse.concat(upperCaseLetters);
 }
 
 if(numbers){
   console.log(numbersList)
+  promptResponse = promptResponse.concat(numbersList);
 }
 
 if(symbols){
   console.log(symbolList)
+  promptResponse = promptResponse.concat(symbolList);
 }
 
+console.log(promptResponse)
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
