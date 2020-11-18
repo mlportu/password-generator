@@ -22,8 +22,8 @@ function generatePassword(){
 
 var promptResponse = []
 
- var samplePrompt = prompt("This is a sample prompt to get information");
- console.log(samplePrompt);
+ var passLength = prompt("Please select a number between 8 and 128");
+ console.log(passLength);
 
  var lowerCase = confirm("Lowercase");
  console.log(lowerCase);
@@ -60,7 +60,7 @@ if(symbols){
 
 console.log(promptResponse)
 
-for(var i=0; i< 10; i++){
+for(var i=0; i< passLength; i++){
 randomPass =  Math.floor(Math.random() * promptResponse.length)
 }
 
