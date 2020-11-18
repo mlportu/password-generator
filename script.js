@@ -26,7 +26,7 @@ randomPass = [];
 
  var passLength = prompt("Please select a number between 8 and 128");
 
- if (isNAN(passLength) || (passLength < 8) || (passLength >128)){
+ if (isNaN(passLength) || (passLength < 8) || (passLength >128)){
    window.alert('Please enter a number between 8 and 128')
    return generatePassword();
  }
