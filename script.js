@@ -29,12 +29,19 @@ randomPass = [];
  if (isNaN(passLength) || (passLength < 8) || (passLength >128)){
    window.alert('Please enter a number between 8 and 128')
    return generatePassword();
- }
 
- var lowerCase = confirm("Lowercase");
- var upperCase = confirm("Uppercase");
- var numbers = confirm("numbers");
- var symbols = confirm("symbols");
+ }else {
+  var lowerCase = confirm("Lowercase");
+  var upperCase = confirm("Uppercase");
+  var numbers = confirm("numbers");
+  var symbols = confirm("symbols");
+
+  if((lowerCase === false) && (upperCase === false) && (numbers === false) && (symbols === false)){
+    window.alert("You must select at least one character type to include in your password")
+    return generatePassword();
+  }
+ };
+
 
 if(lowerCase){
   // console.log(lowerCaseLetters)
