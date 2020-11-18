@@ -5,6 +5,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   console.log('click')
   var password = generatePassword();
+  console.log(password)
 
   var passwordText = document.querySelector("#password");
 
@@ -67,6 +68,9 @@ randomPass.push(promptResponse[Math.floor(Math.random() * promptResponse.length)
 
 console.log(randomPass)
 
+return randomPass.join("");
+
 }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
