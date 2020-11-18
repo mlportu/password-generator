@@ -13,8 +13,7 @@ Users can generate their own randomized passwords. Users simply click on the gen
 
 
 ## Website
-https://protected-cliffs-32138.herokuapp.com/ 
-
+https://mlportu.github.io/password-generator/
 
 ## Contribution
 Made by Mike Portu
